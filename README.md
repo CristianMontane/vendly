@@ -18,17 +18,14 @@ Aplicación de autenticación con número de teléfono y código OTP, desarrolla
 
 ## 📦 Instalación
 ```sh
-git clone 
+git clone "https://github.com/CristianMontane/vendly/tree/master"
 cd vendly
 npm install
-npm run dev
+npm run dev 
 pnpm run dev
 ```
 
 ## 📌 Próximos Pasos
 - Integrar API real 
 - Pruebas E2E con Cypress
-
-## 📜 Licencia
-MIT
 
