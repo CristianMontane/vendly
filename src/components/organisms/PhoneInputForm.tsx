@@ -40,14 +40,14 @@ const PhoneInputForm: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault(); 
     if (isValid) {
-      setLoading(true); // Iniciar carga
+      setLoading(true); 
       try {
         await mockApi.sendVerificationCode(phone);
         router.push("/phone/verification");
       } catch {
         setError("Error enviando el código.");
       } finally {
-        setLoading(false); // Finalizar carga
+        setLoading(false); 
       }
     }
   };

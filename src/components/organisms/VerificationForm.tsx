@@ -19,7 +19,7 @@ const VerificationForm: React.FC = () => {
     try {
       await mockApi.verifyCode(code.join(""));
       alert("Código correcto");
-      router.push("/");
+      router.push("/home");
     } catch {
       console.error("Código incorrecto");
     } finally {

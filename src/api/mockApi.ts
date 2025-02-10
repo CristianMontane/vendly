@@ -8,8 +8,12 @@ export const mockApi = {
     console.log(`Código recibido: ${code}`);
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (code === "1234") alert("Código correcto");
-        else alert("Código incorrecto");
+        if (code === "1234") {
+          resolve(true); // Se debe llamar resolve para indicar éxito
+        } else {
+          alert("Código incorrecto");
+          reject(new Error("Código incorrecto")); // Se debe llamar reject para indicar error
+        }
       }, 1000);
     });
   },
