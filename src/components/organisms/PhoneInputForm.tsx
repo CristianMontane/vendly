@@ -14,14 +14,17 @@ const PhoneInputForm: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false); // Estado de carga
   const router = useRouter(); 
 
+  //Validacion del número de teléfono
   const validatePhone = (value: string) => {
     const phoneRegex = /^\+57\s\d{3}\s\d{3}\s\d{4}$/;
     return phoneRegex.test(value);
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    // Elimina caracteres no válidos
     let value = event.target.value.replace(/[^\d\s+]/g, "");
-
+    
+    //Si empieza con +57, formatea el número en bloques de 3-3-4
     if (value.startsWith("+57")) {
       value = value.replace(/\D/g, "");
       value = `+57 ${value.slice(2, 5)} ${value.slice(5, 8)} ${value.slice(8, 12)}`.trim();

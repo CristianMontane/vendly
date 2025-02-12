@@ -9,7 +9,7 @@ const LoginLanding = () => {
 
         {/* Welcome Message */}
         <div className="text-center space-y-3 mb-12">
-          <h2 className="text-3xl font-bold text-white">Bienvenido</h2>
+          <h1 className="text-3xl font-bold text-white">Bienvenido</h1>
           <p className="text-xl text-gray-400">Comienza con tu cuenta</p>
         </div>
 

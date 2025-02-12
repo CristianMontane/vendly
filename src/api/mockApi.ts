@@ -1,4 +1,5 @@
 export const mockApi = {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   sendVerificationCode: (phone: string) => {
     //console.log(`Código enviado a: ${phone}`);
     return new Promise((resolve) => setTimeout(() => resolve(true), 1000));

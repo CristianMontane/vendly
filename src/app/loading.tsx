@@ -12,11 +12,8 @@ const LoadingScreen = () => {
               <Loader className="w-8 h-8 text-gray-900 animate-spin" />
             </div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-2">
-              Verificando...
+              Cargando...
             </h2>
-            <p className="text-gray-600">
-              Esto tomará solo un momento
-            </p>
           </div>
         </div>
       </div>
